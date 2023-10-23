@@ -30,7 +30,7 @@ body {
 .popup-content {
     background: #fff;
     padding: 20px;
-    max-width: 20vw; /* Aumentando a largura para 80% da largura da janela */
+    max-width: 20vw; /* Aumentando a largura da janela */
     margin: 20px auto;
     border-radius: 8px;
     text-align: center;
@@ -79,6 +79,6 @@ body {
 /* Modificações para tornar o pop-up responsivo */
 @media screen and (max-width: 767px) {
     .popup-content {
-        max-width: 70%; /* Aumentando a largura para 90% da largura da janela em dispositivos móveis */
+        max-width: 70%; /* Aumentando a largura para janela em dispositivos móveis */
     }
 }
