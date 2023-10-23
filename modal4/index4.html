@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <!-- Conteúdo do seu site -->
+    <div class="image-container">
+
+        <img src="/escada1.jpg" alt="Imagem 1" onclick="openPopup('Projeto sala Portugal', ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo vero, distinctio, laboriosam numquam placeat sequi libero repellat voluptates minus obcaecati accusamus rerum nostrum voluptas accusantium vitae, quos iusto aut autem.', ['/escada1.jpg', '/escada2.jpg', '/escada3.jpg'])">
+
+        <img src="/escada2.jpg" alt="Imagem 2" onclick="openPopup('Projeto sala Rosana', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo vero, distinctio, laboriosam numquam placeat sequi libero repellat voluptates minus obcaecati accusamus rerum nostrum voluptas accusantium vitae, quos iusto aut autem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo vero, distinctio, laboriosam numquam placeat sequi libero repellat voluptates minus obcaecati accusamus rerum nostrum voluptas accusantium vitae, quos iusto aut autem. ', ['/escada2.jpg', '/escada3.jpg', '/escada1.jpg'])">
+
+        <img src="/escada1.jpg" alt="Imagem 1" onclick="openPopup('Projeto sala Portugal', ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo vero, distinctio, laboriosam numquam placeat sequi libero repellat voluptates minus obcaecati accusamus rerum nostrum voluptas accusantium vitae, quos iusto aut autem.', ['/escada1.jpg', '/escada2.jpg', '/escada3.jpg'])">
+
+        <img src="/escada2.jpg" alt="Imagem 2" onclick="openPopup('Projeto sala Rosana', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo vero, distinctio, laboriosam numquam placeat sequi libero repellat voluptates minus obcaecati accusamus rerum nostrum voluptas accusantium vitae, quos iusto aut autem.', ['/escada2.jpg', '/escada3.jpg', '/escada1.jpg'])">
+
+    </div>
+
+    <!-- Pop-up Container -->
+    <div class="popup-container" id="popupContainer">
+        <div class="popup-content">
+            <span class="popup-close-btn" onclick="closePopup()">&times;</span>
+            <h2 id="popupTitle"></h2>
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img id="popupImage1" src="" alt="Imagem 1">
+                </div>
+                <div class="carousel-slide">
+                    <img id="popupImage2" src="" alt="Imagem 2">
+                </div>
+                <div class="carousel-slide">
+                    <img id="popupImage3" src="" alt="Imagem 3">
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button onclick="prevSlide()">Anterior</button>
+                <button onclick="nextSlide()">Próximo</button>
+            </div>
+            <p id="popupDescription"></p>
+        </div>
+    </div>
+
+    <script src="script4.js"></script>
+</body>
+</html>
+
+

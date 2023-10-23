@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image-container img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    max-width: 20vw; /* Aumentando a largura para 80% da largura da janela */
+    margin: 20px auto;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.popup-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-controls {
+    text-align: center;
+}
+
+
+.popup-content img {
+    max-width: 80%;
+    max-height: 100%;
+
+}
+
+.popup-content p {
+    max-height: 150px; /* Defina a altura máxima que deseja para o texto */
+    overflow-y: auto; /* Adiciona uma barra de rolagem caso o texto ultrapasse a altura máxima */
+}
+
+/* Modificações para tornar o pop-up responsivo */
+@media screen and (max-width: 767px) {
+    .popup-content {
+        max-width: 70%; /* Aumentando a largura para 90% da largura da janela em dispositivos móveis */
+    }
+}
